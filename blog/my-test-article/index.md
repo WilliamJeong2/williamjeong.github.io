@@ -5,7 +5,7 @@ subtitle: "이 글은 테스트를 하기 위한 글입니다."
 type: "Archive"
 blog: true
 draft: true
-text: false
+text: true
 author: "Jinwoo Jeong"
 post-header: true
 order: 9
