@@ -1,34 +1,37 @@
 ---
 layout: post
-title: "Jihye Leee"
-subtitle: "이지혜"
+title: "Jinwoo Jeong"
+subtitle: "정진우"
 type: "About"
-author: "Jihye Lee"
+author: "Jinwoo Jeong"
 permalink: /about/
 post-header: true
 header-img: img/about.jpg
 ---
 
-UX 에이전시 GUI 디자이너를 거쳐 현재는 RIDI에서 프로덕트 디자이너로 5년째 근무 중이다. 디자이너에게 코딩을 알려주는 코딩하는 디자이너라는 프로그램을 운영하고 브랜딩하기도 했다. 더 좋은 디자인 팀 만들기와 디자이너의 글쓰기에 관심이 많다.
+## About William Jeong
 
-# Media
-### Design Spectrum의 팟캐스트 Design Table
+### Contact
 
-- Design Table Ep 19. `끊임없이 배우는 디자이너`
-- 들을 수 있는 곳: [iTunes](http://itun.es/kr/i6TOib.c) / [팟빵](http://www.podbbang.com/ch/13590) / [Podty](https://www.podty.me/cast/174282)
+- [jinwoo5480@snu.ac.kr](mailto:jinwoo5480@snu.ac.kr)
 
-<br />
+---------
 
-### 디자인 매거진 CA 2015년 3월호
+### Interests
 
-- [디자이너와 스타트업 종사자의 네트워킹 파티](http://cakorea.com/archives/2779)
+**Data Scientist**<br />
+**Deep Learning**
 
-<br />
+--------
 
-### 월간 마이크로소프트웨어 2015년 2월호 표지 모델 및 기사
+### Educations and Research Experiences
 
-- [마소 VOL. 376-2015.02](https://www.imaso.co.kr/archives/458)
-- [코딩하는 디자이너를 말하다](http://14.49.34.137/?p=3216)
-- [이지혜 DXD세미나 운영진 “코딩은 또 하나의 즐거움”](http://14.49.34.137/?p=3207)
+Researcher of  [BiKE Lab]( http://bike.snu.ac.kr/ ) in Seoul National University
 
-<br />
+*Editing...*
+
+---------------
+
+### Stacks
+
+<a frameborder="0" data-theme="dark" data-layers="1,2,3,4" data-stack-embed="true" href="https://embed.stackshare.io/stacks/embed/ff1a6df2d7d2aecdf0351d73b6540f"/></a><script async src="https://cdn1.stackshare.io/javascripts/client-code.js" charset="utf-8"></script>
