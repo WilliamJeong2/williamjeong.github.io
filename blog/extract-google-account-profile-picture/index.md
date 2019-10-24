@@ -7,11 +7,12 @@ type: "Archive"
 blog: true
 text: true
 author: "Jinwoo Jeong"
-post-header: true
+post-header: false
+#header-img: "img/jekyll-pattern.jpg"
 order: 9
 ---
 
-![](http://www.google.com/logos/doodles/2015/googles-new-logo-5078286822539264.3-hp2x.gif)
+![google](http://www.google.com/logos/doodles/2015/googles-new-logo-5078286822539264.3-hp2x.gif)
 
 구글 프로필 사진을 다운받아야 할 경우가 가끔 있다. 한글로 검색해보니 정보가 나오지 않아서 검색 결과의 내용을 정리해 두고자 한다.
 
