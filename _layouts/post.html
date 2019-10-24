@@ -57,10 +57,10 @@ layout: default
         </div>
     {% endif %}
 <!--draft 아닐 때 content 보여주기-->
-    {% if page.draft == false %}
+    {% if page.draft != true %}
     {{ content }}
     {% endif %}
-    
+
 <!--큐레이션 영역-->
     {% if page.book == true %}
         {% if page.ridibooks == true %}
