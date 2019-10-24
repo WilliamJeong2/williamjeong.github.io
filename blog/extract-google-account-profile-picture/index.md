@@ -2,8 +2,8 @@
 layout: post
 title:  "구글 프로필 사진 다운로드하기"
 subtitle: "구글 프로필 이미지가 필요할 때 다운로드 하는 방법"
-draft: true
-type: "Archive"
+draft: false
+type: "Tips"
 blog: true
 text: true
 author: "Jinwoo Jeong"
