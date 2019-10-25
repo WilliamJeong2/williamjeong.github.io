@@ -9,7 +9,7 @@ text: true
 author: "Jinwoo Jeong"
 post-header: false
 #header-img: "img/jekyll-pattern.jpg"
-order: 9
+order: 1
 ---
 
 ![google](http://www.google.com/logos/doodles/2015/googles-new-logo-5078286822539264.3-hp2x.gif)
@@ -22,3 +22,4 @@ order: 9
 2.  https://get.google.com/albumarchive  에 접속한다.
 3. **프로필 사진 > Profile Photos** 으로 이동한다. 여기에서 계정의 모든 프로필 사진들을 찾을 수 있다.
 4. 우측 상단 구석에 있는 triple dot 버튼을 사용해서 하나의 사진을 다운받거나 모든 사진을 다운받을 수 있다.
+
