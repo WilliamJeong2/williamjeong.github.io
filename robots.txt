@@ -1,0 +1,3 @@
+User-agent: *
+Allow:
+Sitemap: http://williamjeong2.github.io/sitemap.xml
