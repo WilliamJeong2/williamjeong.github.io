@@ -2,7 +2,7 @@
 permalink:      /:year-:month-:day/:title
 
 # Setup
-title:          Jinwoo Jeong
+title:          Jinwoo Jeong Blog
 baseurl:        ""
 url:            "http://williamjeong2.github.io"
 
@@ -20,7 +20,7 @@ author:
   url:          http://williamjeong2.github.io
   email:        wjd5480@gmail.com
   github:       WilliamJeong2
-  #twitter:      playpingpong
+  #twitter:      
 
 # Custom vars
 version:        3.4.1
