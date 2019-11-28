@@ -7,12 +7,16 @@ type: "Tips"
 blog: true
 text: true
 author: "Jinwoo Jeong"
-post-header: "https://drive.google.com/uc?id=1TFcc3qCLQ19xv2rawQ6T7uZLPSA-zoAZ"
+post-header: true
+header-img: "https://drive.google.com/uc?id=1TFcc3qCLQ19xv2rawQ6T7uZLPSA-zoAZ"
 order: 2
 ---
 
 > *이 글은 [Lhyam Sumal](https://www.berserkcomputers.co.uk/author/lsumal)의 [HOW TO SAVE APPLE TIME MACHINE BACKUPS TO CLOUD SERVICES LIKE ONEDRIVE](https://www.berserkcomputers.co.uk/how-to-save-apple-time-machine-backups-to-cloud-services-like-onedrive/) 를 번역한 글입니다. 모든 저작권과 권리는 Sumal에게 있습니다.
+>
 > *This article is a translated version of  [Lhyam Sumal](https://www.berserkcomputers.co.uk/author/lsumal)'s article: [HOW TO SAVE APPLE TIME MACHINE BACKUPS TO CLOUD SERVICES LIKE ONEDRIVE.](https://www.berserkcomputers.co.uk/how-to-save-apple-time-machine-backups-to-cloud-services-like-onedrive/) All rights goes back to him.
+>
+> 
 >
 > *제가 이해한 대로 번역하였기 때문에 완벽하지 않을 수 있습니다.
 
