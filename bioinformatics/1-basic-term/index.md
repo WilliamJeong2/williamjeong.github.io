@@ -97,9 +97,9 @@ DNA는 뉴클레오티드(Nucleotide)라는 단위로 구성되어 있으며, DN
 
 ### Reference
 
-http://www.incodom.kr/RNA
-https://ko.wikipedia.org/
-http://ko.experiments.wikidok.net/wp-d/59d05f520966ec85478c0be5/Viewhttps://www.expii.com/t/dna-vs-rna-10205
+http://www.incodom.kr/RNA<br>
+https://ko.wikipedia.org/<br>
+http://ko.experiments.wikidok.net/wp-d/59d05f520966ec85478c0be5/View<br>https://www.expii.com/t/dna-vs-rna-10205<br>
 
 
 
