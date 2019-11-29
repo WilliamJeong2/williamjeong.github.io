@@ -2,7 +2,7 @@
 layout: post
 title: "Bioinformatics 기본 개념 정리"
 subtitle: "Bioinformatics Series #1"
-draft : true
+draft : false
 type: "Bioinformatics"
 bioinformatics: true
 blog: true
