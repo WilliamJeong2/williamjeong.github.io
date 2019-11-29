@@ -1,8 +1,9 @@
 ---
 layout: default
+work: true
+main: true
 title: "Bioinformatics"
 description: 생물정보학에 관한 글을 올려요.
-main: true
 project-header: true
 header-img: img/about.jpg
 ---

@@ -4,6 +4,7 @@ title: "Bioinformatics 기본 개념 정리"
 subtitle: "Bioinformatics Series #1"
 draft : true
 type: "Bioinformatics"
+bioinformatics: true
 blog: true
 text: true
 author: "Jinwoo Jeong"
@@ -56,13 +57,49 @@ DNA는 뉴클레오티드(Nucleotide)라는 단위로 구성되어 있으며, DN
 - miRNA : 생물의 유전자 발현을 제어하는 역할
 - siRNA : 특정 단백질의 생산을 방해해 유전자 발현을 억제
 
+### 뉴클레오티드
 
+![](img/4.png)
 
+간단한 설명 : DNA라는 복합체를 구성하는 단위체.
 
+복잡한 설명 : 핵산을 구성하는 단위체인 분자이다. 뉴클레오티드는 대사에 중추적인 역할을 한다. 그 용량으로 인해 화학적 에너지의 공급자(ATP)이며, 세포내 신호계 그리고 효소 반응의 중요성분으로 작용한다.
 
+---
 
+###Gene
 
+![](img/5.jpg)
 
+간단한 설명 : 유전자의 기본 단위로 하나의 기능을 수행하게 명령하는 DNA 사슬
+
+복잡한 설명 : 게놈 서열의 특정한 위치에 있는 구간으로 유전형질의 단위가 되는 것으로 정의되는데, DNA서열의 일부분을 이루며 조절 구간, 전사 구간, 기타 기능이 부여된 구간 등으로 구성된다.
+
+### Chromosome
+
+![](img/6.jpg)
+
+간단한 설명 : 많은 DNA를 포함하는 유전물질
+
+복잡한 설명 : 진핵세포를 지닌 생물의 세포분열과정에서만 관찰되며, 세포분열기에 들어가면서 유전물질을 안전하게 보호하고 딸세포들에게 형평성있게 유전정보를 분배하기위해 염색사가 꼬이고 뭉쳐져 응축되어 X자형태를 이룬 구조물이다. 또한 유전 정보를 담아 전달하는 역할을 하는 것이며, 세포를 관찰하기 위해 사용하는 특정 염색액에 잘 염색 된다고 하여 붙여진 이름이다.
+
+---
+
+### Genome Project
+
+![](img/7.jpg)
+
+간단한 설명 : 특정한 종의 유전체를 알아내는 프로젝트
+
+복잡한 설명 : 1990년에서 2003년까지 인간 게놈에 있는 약 32억개의 뉴클레오티드 염기쌍의 서열을 밝히는 것을 목적으로 한 프로젝트이다. 이 결과로 인해 많은 질병들의 원인이 되는 유전자의 염색체 상에서의 위치를 이해할 수 있게 되었다. 이 프로젝트의 자세한 내용은 [여기]([https://ko.wikipedia.org/wiki/%EC%9D%B8%EA%B0%84_%EA%B2%8C%EB%86%88_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8](https://ko.wikipedia.org/wiki/인간_게놈_프로젝트))를 참고.
+
+---
+
+### Reference
+
+http://www.incodom.kr/RNA
+https://ko.wikipedia.org/
+http://ko.experiments.wikidok.net/wp-d/59d05f520966ec85478c0be5/Viewhttps://www.expii.com/t/dna-vs-rna-10205
 
 
 
@@ -71,8 +108,3 @@ DNA는 뉴클레오티드(Nucleotide)라는 단위로 구성되어 있으며, DN
 
 
 
-### Reference
-
-http://www.incodom.kr/RNA
-https://ko.wikipedia.org/wiki/RNA
-http://ko.experiments.wikidok.net/wp-d/59d05f520966ec85478c0be5/Viewhttps://www.expii.com/t/dna-vs-rna-10205
