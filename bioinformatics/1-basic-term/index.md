@@ -5,7 +5,6 @@ subtitle: "Bioinformatics Series #1"
 draft : false
 type: "Bioinformatics"
 bioinformatics: true
-blog: true
 text: true
 author: "Jinwoo Jeong"
 post-header: false
