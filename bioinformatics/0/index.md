@@ -4,6 +4,7 @@ title: "Bioinformatics rna-seq 연재"
 subtitle: "Bioinformatics Series #0"
 draft : false
 type: "Bioinformatics"
+bioinformatics: true
 blog: true
 text: true
 author: "Jinwoo Jeong"
@@ -11,11 +12,6 @@ post-header: false
 post-header: ""
 order: 1
 ---
-
-```
-최초 작성한 날짜 : 2019/11/28 2:55 PM
-마지막으로 수정한 날짜 : 
-```
 
 > 2019년 올 한 해 동안 Bioinformatics를 시작하게 되면서, 기존에는 잘 알지 못했던 biology의 많은 지식을 필요로 하게 되었다. 나의 마일스톤을 블로그에 기록해보려고 한다. 처음 연재하는 글이기 때문에 다듬어지지 않은 글이 나올 가능성이 높지만 최대한 쉽게 소개해보겠다.
 
