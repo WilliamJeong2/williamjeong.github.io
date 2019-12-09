@@ -15,7 +15,7 @@ order: 4
 
 ---
 
-:page_facing_up: **포트스**
+📃 **포트스**
 
 [깃허브(GitHub)로 취업하기](https://sujinlee.me/professional-github/)
 
