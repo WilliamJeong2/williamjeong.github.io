@@ -7,7 +7,8 @@ type: "Archive"
 blog: true
 text: true
 author: "Jinwoo Jeong"
-post-header: "img/weekly_archive_form.png"
+post-header: true
+header-img: "img/weekly_archive_form.png"
 order: 4
 ---
 
