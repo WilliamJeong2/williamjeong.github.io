@@ -4,12 +4,12 @@ title: "어떤 reference genome을 사용해야 할까?"
 subtitle: ""
 draft : false
 type: "Tips"
-blog: true
+bioinformatics: true
 text: true
 author: "Jinwoo Jeong"
 post-header: false
 header-img: ""
-order: 6
+order: 3
 ---
 
 ### 들어가기 전에
