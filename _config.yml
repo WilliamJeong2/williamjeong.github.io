@@ -6,6 +6,10 @@ title:          Jinwoo Jeong Blog
 baseurl:        ""
 url:            "http://williamjeong2.github.io"
 
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
+
 # Assets
 sass:
   sass_dir:     _sass
