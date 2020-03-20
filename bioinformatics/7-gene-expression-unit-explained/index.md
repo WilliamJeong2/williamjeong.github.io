@@ -21,12 +21,16 @@ RNA-seq의 발현 분석에서 normalized gene expression을 의미하는 것으
 먼저 A, B, C, D라는 4개의 gene과 3개의 replicate를 가지고 있는 테이블이 있습니다.
 gene 옆에 있는 kb(kilobase)는 gene의 길이입니다.
 
+
+
 | Gene Name | Rep1 Counts | Rep2 Counts | Rep3 Counts |
 | --------- | ----------- | ----------- | ----------- |
 | A (2kb)   | 10          | 12          | 30          |
 | B (4kb)   | 20          | 25          | 60          |
 | C (1kb)   | 5           | 8           | 15          |
 | D (10kb)  | 0           | 0           | 1           |
+
+
 
 Rep3를 보면 gene에 상관없이 다른 replicate들보다 많은 reads를 가진 것을 알 수 있습니다. 이는 sequencing depth가 다른 replicate들보다 높다는 걸 의미합니다. 이제 이걸 normalize(정규화) 할 것입니다.
 
@@ -49,6 +53,8 @@ RPKM은 single-end RNA-seq용으로 제작되었습니다.
 
 이해가 잘 안되신다면 직접 계산해볼까요?
 
+
+
 | Gene Name | Rep1 Counts | Rep2 Counts | Rep3 Counts |
 | --------- | ----------- | ----------- | ----------- |
 | A (2kb)   | 10          | 12          | 30          |
@@ -56,21 +62,33 @@ RPKM은 single-end RNA-seq용으로 제작되었습니다.
 | C (1kb)   | 5           | 8           | 15          |
 | D (10kb)  | 0           | 0           | 1           |
 
+
+
 먼저, **(1) read depth**를 정규화합니다.
 
 - 각각의 replicate들에서 총 reads의 수를 계산합니다.
+
+
 
 | Gene Name   | Rep1 Counts | Rep2 Counts | Rep3 Counts |
 | ----------- | ----------- | ----------- | ----------- |
 | Total reads | 35          | 45          | 106         |
 
+
+
 - 이 Total reads를 10<sup>6</sup>으로 나누어야 하는데 보기 쉽게 10으로만 나눠보겠습니다.
+
+
 
 | Gene Name     | Rep1 Counts | Rep2 Counts | Rep3 Counts |
 | ------------- | ----------- | ----------- | ----------- |
 | Tens of reads | 3.5         | 4.5         | 10.6        |
 
+
+
 따라서 이 값들은 각 replicate들에 대한 "per million" scaling factors입니다. 그러니까 우리는 각 gene의 read counts을 이 값들로 나누어야 합니다. 그러면 우리는 reads per million을 계산할 수 있는데 이를 **RPM**이라고 해보죠.
+
+
 
 | Gene Name | Rep1 RPM | Rep2 RPM | Rep3 RPM |
 | --------- | -------- | -------- | -------- |
@@ -79,7 +97,11 @@ RPKM은 single-end RNA-seq용으로 제작되었습니다.
 | C (1kb)   | 1.43     | 1.78     | 1.42     |
 | D (10kb)  | 0        | 0        | 0.09     |
 
+
+
 두 번째 단계는 **(2) gene length로 정규화**하는것입니다. 각 replicate의 counts를 gene length(**K**ilobase)로 나누면 됩니다. 쉽죠? 그러면 아래의 테이블이 나오게 됩니다.
+
+
 
 | Gene Name | Rep1 RPKM | Rep2 RPKM | Rep3 RPKM |
 | --------- | --------- | --------- | --------- |
@@ -88,11 +110,15 @@ RPKM은 single-end RNA-seq용으로 제작되었습니다.
 | C (1kb)   | 1.43      | 1.78      | 1.42      |
 | D (10kb)  | 0         | 0         | 0.009     |
 
+
+
 자 그러면 우리는 RPKM을 가지게 되었습니다.
 
 ### 정리해볼까요?
 
 우리는 depth와 gene length을 정규화하지 않은 데이터를 가지고 있었습니다.
+
+
 
 | Gene Name | Rep1 Counts | Rep2 Counts | Rep3 Counts |
 | --------- | ----------- | ----------- | ----------- |
@@ -101,7 +127,11 @@ RPKM은 single-end RNA-seq용으로 제작되었습니다.
 | C (1kb)   | 5           | 8           | 15          |
 | D (10kb)  | 0           | 0           | 1           |
 
+
+
 하지만 우리는 이제 각각의 sequencing depth와 각각의 gene length에 대해 정규화해서 각각의 replicate와 각각의 gene에 대한 RPKM 데이터를 가지게 되었습니다.
+
+
 
 | Gene Name | Rep1 RPKM | Rep2 RPKM | Rep3 RPKM |
 | --------- | --------- | --------- | --------- |
@@ -109,6 +139,8 @@ RPKM은 single-end RNA-seq용으로 제작되었습니다.
 | B (4kb)   | 1.43      | 1.39      | 1.42      |
 | C (1kb)   | 1.43      | 1.78      | 1.42      |
 | D (10kb)  | 0         | 0         | 0.009     |
+
+
 
 # FPKM
 
@@ -128,6 +160,8 @@ RPKM / Total RPKM * 10^6
 
 흠.. 같이 봐볼까요?
 
+
+
 | Gene Name | Rep1 Counts | Rep2 Counts | Rep3 Counts |
 | --------- | ----------- | ----------- | ----------- |
 | A (2kb)   | 10          | 12          | 30          |
@@ -135,7 +169,11 @@ RPKM / Total RPKM * 10^6
 | C (1kb)   | 5           | 8           | 15          |
 | D (10kb)  | 0           | 0           | 1           |
 
+
+
 먼저 (1) 각 replicate의 counts를 gene length로 나눕니다. 그러면 아래의 테이블이 나오겠죠? **RPK**는 **R**eads **P**er **K**ilobase라는걸 알 수 있습니다.
+
+
 
 | Gene Name | Rep1 RPK | Rep2 RPK | Rep3 RPK |
 | --------- | -------- | -------- | -------- |
@@ -144,14 +182,22 @@ RPKM / Total RPKM * 10^6
 | C (1kb)   | 5        | 8        | 15       |
 | D (10kb)  | 0        | 0        | 0.1      |
 
+
+
 두 번째 단계로 (2) sequencing depth로 정규화하는 것입니다. 우리가 gene lengh을 정규화한 것들의 합(각 replicate read counts의 합)과 각 replicate의 RPK 수를 합하고 (원래는 10^6으로 나눠야 하지만) 10으로 나눈 Tens of RPK를 사용할 것입니다.
+
+
 
 | Gene Name   | Rep1 RPK | Rep2 RPK | Rep3 RPK |
 | ----------- | -------- | -------- | -------- |
 | Total RPK   | 15       | 20.25    | 45.1     |
 | Tens of RPK | 1.5      | 2.025    | 4.51     |
 
+
+
 각 replicate의 counts를 Tens of RPK로 나누게 되면 TPM이 완성됩니다.
+
+
 
 | Gene Name | Rep1 TPM | Rep2 TPM | Rep3 TPM |
 | --------- | -------- | -------- | -------- |
@@ -160,11 +206,15 @@ RPKM / Total RPKM * 10^6
 | C (1kb)   | 3.33     | 3.95     | 3.326    |
 | D (10kb)  | 0        | 0        | 0.02     |
 
+
+
 # 그래서 이게 뭘 의미하는데?
 
 그렇죠 계산하는 방법만 알면 다가 아니죠. 이 둘(RPKM과 TPM)이 뭐가 다른지 알아야겠지요. RPKM과 TPM을 비교해봅시다. 
 
 ### RPKM
+
+
 
 | Gene Name | Rep1 RPKM | Rep2 RPKM | Rep3 RPKM |
 | --------- | --------- | --------- | --------- |
@@ -174,7 +224,11 @@ RPKM / Total RPKM * 10^6
 | D (10kb)  | 0         | 0         | 0.009     |
 | Total     | 4.29      | 4.5       | 4.25      |
 
+
+
 ### TPM
+
+
 
 | Gene Name | Rep1 TPM | Rep2 TPM | Rep3 TPM |
 | --------- | -------- | -------- | -------- |
@@ -183,6 +237,8 @@ RPKM / Total RPKM * 10^6
 | C (1kb)   | 3.33     | 3.95     | 3.326    |
 | D (10kb)  | 0        | 0        | 0.02     |
 | Total     | 10       | 10       | 10       |
+
+
 
 위 결과들은 같은 데이터에서 나온 RPKM과 TPM 값입니다.  둘 다 gene length와 sequencing depth의 편향(bias)이 일치합니다. 하지만 각 column에 대한 정규화된 총 reads는 매우 다릅니다.
 
