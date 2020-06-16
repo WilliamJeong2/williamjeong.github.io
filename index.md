@@ -23,3 +23,4 @@ description: Jinwoo Jeong, who is a Programmer based in Seoul, South Korea. | 'ì
 </section>
 </div>
 {% include resume.html %}
+

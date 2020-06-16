@@ -3,17 +3,13 @@
 #   role:
 #   date:
 #
-# second-place:
-# - name:
-#   role:
-#   date:
+second-place:
+- name: Bike LAB
+  role: Master Student
+  date: 2020. MAR - Present.
 
 first-place:
 - name: BiKE LAB
   role: Researcher
   date: 2019. JAN - 2020. FEB
   
-second-place:
-- name: Bike LAB
-  role: Master Student
-  date: 2020. MAR - Present.

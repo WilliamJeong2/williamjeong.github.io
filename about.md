@@ -19,14 +19,14 @@ header-img: img/about.jpg
 
 ### Interests
 
-**Data Scientist**<br />
+**Bioinformatics**<br />**Data Scientist**<br />
 **Deep Learning**
 
 --------
 
 ### Educations and Research Experiences
 
-Researcher of  [BiKE Lab]( http://bike.snu.ac.kr/ ) in Seoul National University
+Master Student of  [BiKE Lab]( http://bike.snu.ac.kr/ ) in Seoul National University
 
 *Editing...*
 
