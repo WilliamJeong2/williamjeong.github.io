@@ -19,7 +19,7 @@ RNA-seq의 발현 분석에서 normalized gene expression을 의미하는 것으
 따라서 이 3가지 값을 계산하는 방법을 소개하려고 합니다. 아래 순서대로 이해하시면 됩니다.
 
 먼저 A, B, C, D라는 4개의 gene과 3개의 replicate를 가지고 있는 테이블이 있습니다.
-gene 옆에 있는 kb(kilobase)는 gene의 길이입니다.</br>
+gene 옆에 있는 kb(kilobase)는 gene의 길이입니다.<br>
 
 <table>
 <thead>
@@ -67,17 +67,17 @@ Rep3를 보면 gene에 상관없이 다른 replicate들보다 많은 reads를 �
 # RPKM
 
 RPKM은 single-end RNA-seq용으로 제작되었습니다.
-먼저 사자성어 풀이하듯 각 알파벳의 의미를 먼저 살펴보겠습니다. **R**eads **P**er **K**ilobase per **M**illions mapped reads</br>
+먼저 사자성어 풀이하듯 각 알파벳의 의미를 먼저 살펴보겠습니다. **R**eads **P**er **K**ilobase per **M**illions mapped reads<br>
 
-그러면 이게 무슨 뜻이냐...하면 전체 유전자의 길이를 Kilobase(=1000 base pair)로 정규화했을 때 전체 reads 중에서 해당 gene에 mapping된 reads들을 말합니다. 그런데 이 수는 너무 적기 때문에 10<sup>6</sup>을 곱해주게 됩니다.</br>
+그러면 이게 무슨 뜻이냐...하면 전체 유전자의 길이를 Kilobase(=1000 base pair)로 정규화했을 때 전체 reads 중에서 해당 gene에 mapping된 reads들을 말합니다. 그런데 이 수는 너무 적기 때문에 10<sup>6</sup>을 곱해주게 됩니다.<br>
 
 즉 FPKM은 total (1)reads에서 gene에 매핑된 리드들 나눈 값, (2) gene의 전체 길이를 1000으로 나눈 값, (3)10<sup>6</sup>을 곱해주면 됩니다.
 
-![](img/RPKM.png)</br>
+![](img/RPKM.png)<br>
 
 즉, gene 단위의 expression입니다.
 
-이해가 잘 안되신다면 직접 계산해볼까요?</br>
+이해가 잘 안되신다면 직접 계산해볼까요?<br>
 
 <table>
 <thead>
@@ -198,7 +198,7 @@ RPKM은 single-end RNA-seq용으로 제작되었습니다.
 </tr>
 </tbody>
 </table>
-</br></br>
+<br><br>
 
 두 번째 단계는 **(2) gene length로 정규화**하는것입니다. 각 replicate의 counts를 gene length(**K**ilobase)로 나누면 됩니다. 쉽죠? 그러면 아래의 테이블이 나오게 됩니다.
 
@@ -239,7 +239,7 @@ RPKM은 single-end RNA-seq용으로 제작되었습니다.
 </tbody>
 </table>
 
-자 그러면 우리는 RPKM을 가지게 되었습니다.</br></br>
+자 그러면 우리는 RPKM을 가지게 되었습니다.<br><br>
 
 ### 정리해볼까요?
 
@@ -320,7 +320,7 @@ RPKM은 single-end RNA-seq용으로 제작되었습니다.
 </tr>
 </tbody>
 </table>
-</br>
+<br>
 
 # FPKM
 
@@ -330,7 +330,7 @@ RPKM과 유사한 이름을 가지고 있는 FPKM은 **F**ragment **P**er **K**i
 
 RPKM과 FPKM의 차이점은 FPKM은 두개의 reads가 하나의 fragment에 mapping된다는 점을 고려한다는 것입니다.
 
-</br>
+<br>
 
 # TPM
 
@@ -483,7 +483,7 @@ RPKM / Total RPKM * 10^6
 </tr>
 </tbody>
 </table>
-</br></br>
+<br><br>
 
 # 그래서 이게 뭘 의미하는데?
 
@@ -584,7 +584,7 @@ RPKM / Total RPKM * 10^6
 1. RPKM은 각 sample마다 다른 값을 얻었습니다.
 2. TPM은 각 column마다 같은 값을 얻었습니다.
 
-왜 이 차이가 중요한지 봐봅시다. </br>
+왜 이 차이가 중요한지 봐봅시다. <br>
 
 ### Comparison among TPMs
 
@@ -600,7 +600,7 @@ RPKM / Total RPKM * 10^6
 
 TPM은 모든 replicate에 대하여 총 count 수가 보정되었기 때문에 각 gene에 어떤 비율로 reads가 있는지 알 수 있습니다. 예를 들어 Rep1의 gene A는 33%라고 알 수 있습니다. 그리고 이를 통해 Rep2의 gene A와 비교하였을 때 Rep1의 gene A가 Rep2의 gene A보다 약간 크다고 알 수 있습니다. 이는 Rep1의 gene A에 맵핑된 양이 Rep3의 gene A에 맵핑된 양보다 미세하게 더 많다는 걸 알 수 있습니다.
 
-하지만 RPKM은 각각의 replicate가 다른 total reads를 가지기 때문에 각각의 replicate의 gene을 비교하기 어렵습니다. 이 말은 각각의 gene의 reads 수를 비교하기 어렵다는 말이 됩니다.</br>
+하지만 RPKM은 각각의 replicate가 다른 total reads를 가지기 때문에 각각의 replicate의 gene을 비교하기 어렵습니다. 이 말은 각각의 gene의 reads 수를 비교하기 어렵다는 말이 됩니다.<br>
 
 ### 따라서
 
