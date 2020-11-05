@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "FastQ 란?"
-subtitle: "FastQ format 무엇인가"
-draft : false
-type: "Terms"
+title: FastQ 란?
+subtitle: FastQ format 무엇인가
+draft: false
+type: Terms
 bioinformatics: true
 text: true
-author: "Jinwoo Jeong"
+author: Jinwoo Jeong
 post-header: false
-header-img: ""
 order: 8
+published: true
 ---
 
 > FastQ 포맷에 대한 공식 문서는 [여기](http://maq.sourceforge.net/fastq.shtml)에서 볼 수 있습니다.
@@ -24,23 +24,23 @@ fasta포맷과 유사한 포맷이지만 quality score같은  syntax가 다릅�
 3. 세 번째 라인은 `+` 로 시작되며, 똑같은 시퀀스 identifier를 가지지만 더이상 사용하지 않습니다. 따라서 `+` 만 남습니다.
 4. 네 번째 라인은 각 시퀀스에 대한 Quality score를 의미합니다.
 
-첫 번째 라인의 fastq 시퀀스 identifier는 보통 각각의 포맷이 붙습니다. 즉, 첫 번째 라인 속 각각의 정보들이 시퀀스와 위치정보를 의미합니다.
+</br>첫 번째 라인의 fastq 시퀀스 identifier는 보통 각각의 포맷이 붙습니다. 즉, 첫 번째 라인 속 각각의 정보들이 시퀀스와 위치정보를 의미합니다.</br>
 
 ```
 @HW-ST911:111:C0N4WACSS:5:1101:2249:2216:1:N:0:TTAGGC CGATC:@@@FF
 ```
 
-HW-ST911		the unique instrument name
-111					the run id
-C0N4WACSS	the flowcell id
-5						flowcell lane
-1101				 tile number within the flowcell lane
-2249				 'x'-coordinate of the cluster within the tile
-2216				 'y'-coordinate of the cluster within the tile
-1						the member of a pair, 1 or 2 (paired-end or mate-pair reads only)
-N						Y if the read is filtered, N otherwise
-0						 0 when none of the control bits are on
-TTAGGC CGATC index sequence
+HW-ST911		the unique instrument name</br>
+111					the run id</br>
+C0N4WACSS	the flowcell id</br>
+5						flowcell lane</br>
+1101				 tile number within the flowcell lane</br>
+2249				 'x'-coordinate of the cluster within the tile</br>
+2216				 'y'-coordinate of the cluster within the tile</br>
+1						the member of a pair, 1 or 2 (paired-end or mate-pair reads only)</br>
+N						Y if the read is filtered, N otherwise</br>
+0						 0 when none of the control bits are on</br>
+TTAGGC CGATC index sequence</br>
 
 
 
@@ -71,4 +71,3 @@ Sequencers는 FastQ 포맷을 표준으로 만들어집니다. 또한, 몇몇 �
 
 
 ---
-
