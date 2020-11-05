@@ -30,17 +30,30 @@ fasta포맷과 유사한 포맷이지만 quality score같은  syntax가 다릅�
 @HW-ST911:111:C0N4WACSS:5:1101:2249:2216:1:N:0:TTAGGC CGATC:@@@FF
 ```
 
-HW-ST911		the unique instrument name<br/>
-111					the run id<br/>
-C0N4WACSS	the flowcell id<br/>
-5						flowcell lane<br/>
-1101				 tile number within the flowcell lane<br/>
-2249				 'x'-coordinate of the cluster within the tile<br/>
-2216				 'y'-coordinate of the cluster within the tile<br/>
-1						the member of a pair, 1 or 2 (paired-end or mate-pair reads only)<br/>
-N						Y if the read is filtered, N otherwise<br/>
-0						 0 when none of the control bits are on<br/>
-TTAGGC CGATC index sequence<br/>
+- HW-ST911
+  - the unique instrument name
+- 111
+  - the run id
+- C0N4WACSS
+  - the flowcell id
+- 5
+  - flowcell lane
+- 1101
+  - tile number within the flowcell lane
+- 2249
+  - 'x'-coordinate of the cluster within the tile
+- 2216
+  - 'y'-coordinate of the cluster within the tile
+- 1
+  - the member of a pair, 1 or 2 (paired-end or mate-pair reads only)
+- N
+  - Y if the read is filtered, N otherwise
+- 0
+  - 0 when none of the control bits are on
+- TTAGGC CGATC
+  - index sequence
+
+<br/>
 
 
 
