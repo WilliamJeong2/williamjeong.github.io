@@ -82,5 +82,3 @@ Sequencers는 FastQ 포맷을 표준으로 만들어집니다. 또한, 몇몇 �
 
 - https://learn.gencore.bio.nyu.edu/ngs-file-formats/fastq-format/
 
-
----
